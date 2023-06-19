@@ -5,7 +5,6 @@ let search = document.querySelector(".search")
 let main = document.querySelector(".main")
 let textP = document.querySelector(".text__content p")
 let cout = 0
-let input = document.querySelector(".search form input")
 let textFlow = document.querySelector(".text__flow")
 let [strong1,strong2,strong3] = [document.getElementsByTagName('strong')[0],document.getElementsByTagName('strong')[1],document.getElementsByTagName('strong')[2]]
 console.log(dark);
@@ -31,3 +30,20 @@ dark.addEventListener("click",(e)=>{
     strong3.classList.toggle('text-white')
     console.log(strong1);
 })
+// let api = prompt("user nameni kiriting: ")
+// let result = document.querySelector('.search p')
+// // fetch(`https://api.github.com/users/${api}`)
+// //     .then((respone)=> respone.json())
+// //     .then((data)=> console.log(data))
+// //     .catch((error)=>{
+// //         result.innerHTML = "no result"
+// //         console.log(result);
+// //     } )
+
+let searchInput = document.getElementById('user-name').value
+let searchBtn = document.getElementById('search__btn')
+searchBtn.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    subDate();
+});
+console.log(searchInput)

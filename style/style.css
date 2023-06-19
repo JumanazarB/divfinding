@@ -50,6 +50,8 @@ header nav .nav__img img{
 /* click event .nav__img dark or light. End nav*/
 
 .search{
+    position: relative;
+    height: 60px;
     display: flex;
     column-gap: 10px;
     /* justify-content: space-between; */
@@ -69,14 +71,24 @@ header nav .nav__img img{
     column-gap: 20px;
 }
 .search form input[type = search]{
-    width: 520px;
+    width: 460px;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 1.5px;
     color: #4B6A9B;
     border: none;
 }
+.search form p{
+    display: none;
+    color: red;
+    margin-top: 15px;
+    text-align: center;
+}
+
 .search__btn{
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
     cursor: pointer;
     font-size: 16px;
     line-height: 24px;
